@@ -1,0 +1,29 @@
+doctype html
+
+include ../_utilities/variables.pug
+
+html(lang!=lang dir!=dir)
+  head
+    include default_head.pug
+
+  body(class!=`${p}base`)
+    // wrapper
+    #wrapper(class!=`${p}wrapper ${p}${page_name}`)
+      != '\n'
+
+      include header.pug
+      != '\n'
+
+      // main
+      main(role!="main" class!=`${p}main`)
+        article(class!=`${p}article`)
+          block content
+            p content
+      // /main
+      != '\n'
+
+      include footer.pug
+      != '\n'
+
+    // /wrapper
+

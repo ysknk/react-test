@@ -1,0 +1,132 @@
+{
+  "index_pug": {
+    "tree": {
+      "index.pug": {}
+    },
+    "files": [
+      "index.pug"
+    ],
+    "dependencies": [
+      "_layouts/default.pug"
+    ],
+    "file": "index.pug"
+  },
+  "_layouts_default_pug": {
+    "tree": {
+      "_layouts/default.pug": {
+        "extendedBy": [
+          {
+            "index.pug": {}
+          }
+        ]
+      }
+    },
+    "files": [
+      "_layouts/default.pug",
+      "index.pug"
+    ],
+    "dependencies": [
+      "_utilities/variables.pug",
+      "_layouts/default_head.pug",
+      "_layouts/header.pug",
+      "_layouts/footer.pug"
+    ],
+    "file": "_layouts/default.pug"
+  },
+  "_layouts_default_head_pug": {
+    "tree": {
+      "_layouts/default_head.pug": {
+        "includedBy": [
+          {
+            "_layouts/default.pug": {
+              "extendedBy": [
+                {
+                  "index.pug": {}
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "files": [
+      "_layouts/default_head.pug",
+      "_layouts/default.pug",
+      "index.pug"
+    ],
+    "dependencies": [],
+    "file": "_layouts/default_head.pug"
+  },
+  "_layouts_footer_pug": {
+    "tree": {
+      "_layouts/footer.pug": {
+        "includedBy": [
+          {
+            "_layouts/default.pug": {
+              "extendedBy": [
+                {
+                  "index.pug": {}
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "files": [
+      "_layouts/footer.pug",
+      "_layouts/default.pug",
+      "index.pug"
+    ],
+    "dependencies": [],
+    "file": "_layouts/footer.pug"
+  },
+  "_layouts_header_pug": {
+    "tree": {
+      "_layouts/header.pug": {
+        "includedBy": [
+          {
+            "_layouts/default.pug": {
+              "extendedBy": [
+                {
+                  "index.pug": {}
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "files": [
+      "_layouts/header.pug",
+      "_layouts/default.pug",
+      "index.pug"
+    ],
+    "dependencies": [],
+    "file": "_layouts/header.pug"
+  },
+  "_utilities_variables_pug": {
+    "tree": {
+      "_utilities/variables.pug": {
+        "includedBy": [
+          {
+            "_layouts/default.pug": {
+              "extendedBy": [
+                {
+                  "index.pug": {}
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "files": [
+      "_utilities/variables.pug",
+      "_layouts/default.pug",
+      "index.pug"
+    ],
+    "dependencies": [],
+    "file": "_utilities/variables.pug"
+  }
+}
